@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postpublish": "aws s3 cp ./dist/first-ci-project s3://first-ci-cd-project --recursive"
   },
   "private": true,
   "dependencies": {
